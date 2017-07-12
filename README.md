@@ -40,9 +40,11 @@ The App uses 5 major components,
 We also use a `<SearchPosts />` component to trigger the search overlay, similarly with the `<Filters />` component. 
 
 #### App Load
-If the use doesnt specify a post to navigate to in the URL, then the app fetches the featured posts, post feed, and data for the search and filter functionality. 
+If the user doesnt specify a post to navigate to in the URL, then the app fetches the featured posts, post feed, and data for the search and filter functionality. 
+
 Once a user clicks to see a post, then the correct component is passed the post data object and initalised. 
-Once a user clicks to closet the post they are on, we empty the post data object and present the post feed again.
+
+Once a user clicks to close the post, we empty the post data object and present the post feed again.
 We use Redux to pass and empty post data to the components, so that they a completley reusable. 
 
 ## Challenges
@@ -50,16 +52,20 @@ We use Redux to pass and empty post data to the components, so that they a compl
 The Wordpress API will only allow 100 posts to be requested in a single API call, this is to avoid large websites with hundreds or thousands of posts to be overburdened with large requests.
 
 We had 2 solutions for this problem, the first was to chain API calls, so that after the initial 100, if there were still posts in the total post count, then run a second API call, until the post count function returned false. 
+
 This was fine until the load time of the app started to slow while waiting for all the API calls to resolve.
 
 Our solution for this problem was to initially load 10 posts, and then when the user clicks 'Load More', run an API call for the next 10, and so on. This made the load time of the app much quicker and enables us to load all posts.
 
 #### Predictive Search & Filtering while not having all posts
 This ties into our solution for the first problem. In order for the user to be able to search properly, all post data needs to be available in the Search componenet. As we're only initially loading 10 posts, that doesnt give a lot of content to search. 
+
 The solution for this was to offer the Search component a custom API endpoint that contains just the ID, Post Title, Categories and Tags.
+
 This then allows the predictive search to offer results as well as having the information to make requests for the search results.
 
 #### Routing to single posts
 The client wanted users to be able to share single posts, for sharing/social media. This meant that url.com/single-post-name had to resolve to the correct post component and load the correct data.
+
 We used React Router and a function in App.js to determine whether the user had inputted a single post url, and to fetch the data while loading the correct component with the post data.
 
