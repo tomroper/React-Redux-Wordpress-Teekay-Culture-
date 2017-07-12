@@ -37,7 +37,7 @@ The App uses 5 major components,
 * `<Video />` Embeds a selected YouTube video, and fetches data from the YouTube API for the description and thumbnail in the Post Feed
 * `<Gallery />` Houses a gallery created in Wordpress, using a Slick Slider React plugin
 
-We also use a <SearchPosts /> component to trigger the search overlay, similarly with the <Filters /> component. 
+We also use a `<SearchPosts />` component to trigger the search overlay, similarly with the `<Filters />` component. 
 
 #### App Load
 If the use doesnt specify a post to navigate to in the URL, then the app fetches the featured posts, post feed, and data for the search and filter functionality. 
