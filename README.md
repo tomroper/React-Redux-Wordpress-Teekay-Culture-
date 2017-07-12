@@ -11,13 +11,13 @@ We spend time planning data flow in the App, reusable components to use and how 
 The first proof of concept iteration was solely React, but after a short while we decided to work with Redux to manage data/functions so components updating more easily with post data.
 
 ## Technology used 
-* Wordpress CMS
-* WP-API
-* Axios
 * React 
 * React Router
 * Redux
+* Axios
 * Webpack
+* Wordpress CMS
+* WP-API
 * npm
 * yarn
 
@@ -43,8 +43,6 @@ If the use doesnt specify a post to navigate to in the URL, then the app fetches
 Once a user clicks to see a post, then the correct component is passed the post data object and initalised. 
 Once a user clicks to closet the post they are on, we empty the post data object and present the post feed again.
 We use Redux to pass and empty post data to the components, so that they a completley reusable. 
-
-
 
 ## Challenges
 #### Wordpress API 100 post limit
