@@ -30,11 +30,11 @@ The React App was then included in the theme folder and index.php renders index.
 
 ## Structure
 The App uses 5 major components,
-* <FeaturedPosts /> Contains the 3 or 4 selected Featured posts
-* <PostFeed /> Has a randomised feed of Wordpress Posts, with a Social CTA and Careers CTA injected every x amount of posts
-* <Article /> Loads the Article type posts, which are styled to display data from the Wordpress WYSIWYG
-* <Video /> Embeds a selected YouTube video, and fetches data from the YouTube API for the description and thumbnail in the Post Feed
-* <Gallery /> Houses a gallery created in Wordpress, using a Slick Slider React plugin
+* `<FeaturedPosts />` Contains the 3 or 4 selected Featured posts
+* `<PostFeed />` Has a randomised feed of Wordpress Posts, with a Social CTA and Careers CTA injected every x amount of posts
+* `<Article />` Loads the Article type posts, which are styled to display data from the Wordpress WYSIWYG
+* `<Video />` Embeds a selected YouTube video, and fetches data from the YouTube API for the description and thumbnail in the Post Feed
+* `<Gallery />` Houses a gallery created in Wordpress, using a Slick Slider React plugin
 
 We also use a <SearchPosts /> component to trigger the search overlay, similarly with the <Filters /> component. 
 
