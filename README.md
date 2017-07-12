@@ -1,4 +1,4 @@
-# **Wordpress Blog SPA Microsite** #
+# **React & Wordpress SPA Microsite** #
 ## [lifeatteekay.com](http://lifeatteekay.com/)
 ## React/Redux SPA with Wordpress CMS ##
 
