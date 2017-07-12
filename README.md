@@ -21,14 +21,30 @@ The first proof of concept iteration was solely React, but after a short while w
 * npm
 * yarn
 
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
 ## Development
 In this project, development happens on you local machine, and runs at localhost:3000. 
 
 We decided to separate the frontend app from the Wordpress theme for initial development to breakaway from using our previous structure and utilise a more industry standard practice of feature based branches.
 
 The React App was then included in the theme folder and index.php renders index.html, which is the mount point. The client can still login to /wp-admin and manage posts, settings etc, which is all reflected in the React App
+
+## Structure
+The App uses 5 major components,
+* <FeaturedPosts /> Contains the 3 or 4 selected Featured posts
+* <PostFeed /> Has a randomised feed of Wordpress Posts, with a Social CTA and Careers CTA injected every x amount of posts
+* <Article /> Loads the Article type posts, which are styled to display data from the Wordpress WYSIWYG
+* <Video /> Embeds a selected YouTube video, and fetches data from the YouTube API for the description and thumbnail in the Post Feed
+* <Gallery /> Houses a gallery created in Wordpress, using a Slick Slider React plugin
+
+We also use a <SearchPosts /> component to trigger the search overlay, similarly with the <Filters /> component. 
+
+#### App Load
+If the use doesnt specify a post to navigate to in the URL, then the app fetches the featured posts, post feed, and data for the search and filter functionality. 
+Once a user clicks to see a post, then the correct component is passed the post data object and initalised. 
+Once a user clicks to closet the post they are on, we empty the post data object and present the post feed again.
+We use Redux to pass and empty post data to the components, so that they a completley reusable. 
+
+
 
 ## Challenges
 #### Wordpress API 100 post limit
