@@ -14,6 +14,7 @@ The first proof of concept iteration was solely React, but after a short while w
 * React 
 * React Router
 * Redux
+* ES6
 * Axios
 * Webpack
 * Wordpress CMS
@@ -61,3 +62,4 @@ This then allows the predictive search to offer results as well as having the in
 #### Routing to single posts
 The client wanted users to be able to share single posts, for sharing/social media. This meant that url.com/single-post-name had to resolve to the correct post component and load the correct data.
 We used React Router and a function in App.js to determine whether the user had inputted a single post url, and to fetch the data while loading the correct component with the post data.
+
