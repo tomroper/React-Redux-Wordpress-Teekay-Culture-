@@ -1,4 +1,4 @@
-# **Teekay Culture Microsite** #
+# **Wordpress Blog SPA Microsite** #
 ## [lifeatteekay.com](http://lifeatteekay.com/)
 ## React/Redux SPA with Wordpress CMS ##
 
