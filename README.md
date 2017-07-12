@@ -3,7 +3,7 @@
 ## React/Redux SPA with Wordpress CMS ##
 - - - - - - - - - - - - - - - - - - - - -
 
-[Imgur](http://i.imgur.com/eOlV9eH.png)
+![Teekay Home Screen](http://i.imgur.com/eOlV9eH.png "Teekay Home Screen")
 
 For this project we were tasked with building a SPA, for a quick and immersive user experience, while using Wordpress as a CMS so the client could easily manage posts, and site settings.
 
