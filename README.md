@@ -39,7 +39,7 @@ This was fine until the load time of the app started to slow while waiting for a
 
 Our solution for this problem was to initially load 10 posts, and then when the user clicks 'Load More', run an API call for the next 10, and so on. This made the load time of the app much quicker and enables us to load all posts.
 
-#### Predictive Search & Filtering while not have all posts
+#### Predictive Search & Filtering while not having all posts
 This ties into our solution for the first problem. In order for the user to be able to search properly, all post data needs to be available in the Search componenet. As we're only initially loading 10 posts, that doesnt give a lot of content to search. 
 The solution for this was to offer the Search component a custom API endpoint that contains just the ID, Post Title, Categories and Tags.
 This then allows the predictive search to offer results as well as having the information to make requests for the search results.
