@@ -8,7 +8,7 @@ For this project we were tasked with building a SPA, for a quick and immersive u
 
 We spend time planning data flow in the App, reusable components to use and how to implement Search/Filter functionality.
 
-The first proof of concept iteration was solely React, but after a short while we decided to work with Redux to manage data/functions so components updating more easily with post data.
+The first proof of concept iteration was solely React, but after a short while we decided to work with Redux to manage data/functions so components could update more easily with post data.
 
 ## Technology used 
 * React 
