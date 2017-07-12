@@ -1,7 +1,6 @@
 # **Teekay Culture Microsite** #
 ## [lifeatteekay.com](http://lifeatteekay.com/)
 ## React/Redux SPA with Wordpress CMS ##
-- - - - - - - - - - - - - - - - - - - - -
 
 ![Teekay Home Screen](http://i.imgur.com/eOlV9eH.png "Teekay Home Screen")
 
