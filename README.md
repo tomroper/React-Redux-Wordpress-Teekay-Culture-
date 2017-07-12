@@ -3,6 +3,8 @@
 ## React/Redux SPA with Wordpress CMS ##
 - - - - - - - - - - - - - - - - - - - - -
 
+[Imgur](http://i.imgur.com/eOlV9eH.png)
+
 For this project we were tasked with building a SPA, for a quick and immersive user experience, while using Wordpress as a CMS so the client could easily manage posts, and site settings.
 
 We spend time planning data flow in the App, reusable components to use and how to implement Search/Filter functionality.
